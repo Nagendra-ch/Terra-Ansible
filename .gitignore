@@ -1,0 +1,6 @@
+*.tfstate
+*.tfstate.backup
+*.terraform
+*.tfstate.*
+*.ansible
+*.plan

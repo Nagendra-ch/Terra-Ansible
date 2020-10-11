@@ -1,0 +1,17 @@
+- hosts: "APP"
+  become: true
+  strategy: debug
+  gather_facts: false
+  roles:
+    - app
+
+- hosts: "API"
+  become: true
+  gather_facts: false
+  roles:
+    - api
+
+- hosts: "WEB"
+  gather_facts: false
+  roles:
+    - web

@@ -1,0 +1,10 @@
+plugin: aws_rds
+regions:
+  - us-east-1
+keyed_groups:
+   - key: tags.Tier
+     separator: ''
+
+# Provide the ARN for the rds-db-instance. You can obtain this from Terraform output or AWS Console
+filters:
+  db-instance-id:
