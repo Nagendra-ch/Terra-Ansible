@@ -1,7 +1,5 @@
 # Variables for accepting Access Key and Secret key for AWS
 # Default region is set to us-east-1
-
-
 variable "region" {
   default = "us-east-1"
 }
